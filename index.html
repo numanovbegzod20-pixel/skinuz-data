@@ -2393,41 +2393,6 @@ function App(){
     </div>
   );
 }
-bot.start((ctx) => {
-  ctx.reply(
-`👋 Xush kelibsiz, ${ctx.from.first_name}!
-
-💎 RFL Crystals - Counter Strike 2 uchun skin va keyslar!
-
-🎮 Qanday ishlaydi:
-• Kristallar to'plang
-• Keyslarni oching
-• Skinlarni oling yoki soting
-• Do'stlarni taklif qilib bonus oling
-
-Boshlash uchun tugmani bosing 👇`,
-{
-  reply_markup: {
-    inline_keyboard: [
-      [
-        {
-          text: "💎 RFL Crystals o'ynash",
-          web_app: { url: "https://sizning-saytingiz.com" }
-        }
-      ],
-      [
-        { text: "📊 Mening balansim", callback_data: "balance" }
-      ],
-      [
-        { text: "👥 Do'stlarni taklif qilish", callback_data: "ref" }
-      ],
-      [
-        { text: "ℹ️ Yordam", callback_data: "help" }
-      ]
-    ]
-  }
-})
-})
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
 </script>
